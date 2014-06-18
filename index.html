@@ -14,36 +14,33 @@
       <hr>
 
       <div>
-        <h4>Generate a Random Number (0 - whatever you want)</h4>
+        <h4>The steps:</h4>
+        <ol>
+          <li>Enter your name</li>
+          <li>Enter a the largest number possible (defines the range of numbers for you to guess)</li>
+          <li>Enter your guess</li>
+          <li>We tell you if you've guessed correctly, or (boo) not!</li>
+        </ol>
 
-        <form name="generate_num">
-          <input type="number" name="user_range" placeholder="Enter the largest possible #">
-          <input type="button" name="button" value="Generate" onClick="displayRandomNumForm()"><br>
-          <input type="text" id="generate" placeholder="Result will display here" value="">
+        <br>
+
+        <h4>Play now:</h4>
+        <form name="guess_number">
+          <input type="text" name="user_name" placeholder="What is your name?"><br>
+          <input type="number" name="user_range" placeholder="Enter the largest possible #"><br>
+          <input type="text" name="user_guess" placeholder="Your guess"><br>
+          <input type="button" name="button" value="Submit your Guess" onClick="guessNumber()">
         </form>
       </div>
 
-      <hr>
+      <br>
 
-      <div>
-        <h4>Come Say Hi!</h4>
+      <h4>I'm dying to know...what was the number??</h4>
+        <input type="button" name="button" value="Tell me now" onClick="returnRandomNumber();showDiv()">
 
-        <form name="say_hi">
-          <input type="text" name="user_name" placeholder="Enter your name">
-          <input type="button" name="button" value="Say Hi!" onClick="getUserName()">
-        </form>
-      </div>
-
-      <hr>
-
-      <div>
-        <h4>What's your Numba?</h4>
-        <p>Tell us your number, and we will repeat it back to you. No saving
-          this to our database! We swear!</p>
-        <button onclick="reproduceNumber()">
-          Tell us your numba
-        </button>
-      </div>
+        <div id="hide-div">
+          <input type="text" id="tell_me">
+        </div>
 
       <script src="guess_the_number.js"></script>
 
