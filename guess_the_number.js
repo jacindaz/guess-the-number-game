@@ -1,5 +1,5 @@
 function displayRandomNumber(){
-  range = prompt("What is highest number you would like to generate?");
+  var range = prompt("What is highest number you would like to generate?");
   var number = Math.floor(Math.random() * range);
   alert("Your random number is: " + number);
 }
@@ -13,4 +13,9 @@ function displayRandomNumForm(){
 function getUserName(){
   var name = document.say_hi.user_name.value;
   alert("Hello " + name + ", nice to meet you!");
+}
+
+function reproduceNumber(){
+  var user_number = prompt("What is your phone number?")
+  alert("Your phone number is: " + user_number)
 }
