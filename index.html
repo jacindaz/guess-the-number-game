@@ -14,10 +14,24 @@
       <hr>
 
       <div>
-        <h4>Generate a Random Number (0 - 100)</h4>
-        <button onclick = "displayRandomNumber()">
-          Generate
-        </button>
+        <h4>Generate a Random Number (0 - whatever you want)</h4>
+
+        <form name="generate_num">
+          <input type="number" name="user_range" placeholder="Enter the largest possible #">
+          <input type="button" name="button" value="Generate" onClick="displayRandomNumForm()"><br>
+          <input type="text" id="generate" placeholder="Result will display here" value="">
+        </form>
+      </div>
+
+      <hr>
+
+      <div>
+        <h4>Come Say Hi!</h4>
+
+        <form name="say_hi">
+          <input type="text" name="user_name" placeholder="Enter your name">
+          <input type="button" name="button" value="Say Hi!" onClick="getUserName()">
+        </form>
       </div>
 
       <script src="guess_the_number.js"></script>

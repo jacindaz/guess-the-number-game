@@ -11,6 +11,6 @@ function displayRandomNumForm(){
 }
 
 function getUserName(){
-  name = prompt("What is your name?");
-  alert("Hello " + name + "!");
+  var name = document.say_hi.user_name.value;
+  alert("Hello " + name + ", nice to meet you!");
 }
