@@ -1,0 +1,12 @@
+body {
+  margin: 2% 15%;
+  background-color: #D0F2E1;
+}
+
+.inner-body {
+  background-color: white;
+  padding: 2% 5%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
